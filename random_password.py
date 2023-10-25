@@ -4,7 +4,7 @@ import string
 
 generate_password = lambda x: ''.join([random.choice(string.ascii_letters + string.hexdigits) for _ in range(x)])
 
-line = 1000 * int(1e3) # Number one created (1 * 1000) = 1000 line
+line = 40000 * int(1e3) # Number one created (1 * 1000) = 1000 line
 character = 6          # Number char password
 
 list_password = [generate_password(character) for _ in range(line)]
